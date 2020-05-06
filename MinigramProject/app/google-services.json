@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "839267350427",
+    "firebase_url": "https://mim-52baa.firebaseio.com",
+    "project_id": "mim-52baa",
+    "storage_bucket": "mim-52baa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839267350427:android:b38bd78ab507f293a3133e",
+        "android_client_info": {
+          "package_name": "com.thelittlekarinprojects.minigram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839267350427-j652lhuthjcl5ovseqjua1ni15bir0ok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thelittlekarinprojects.minigram",
+            "certificate_hash": "328b9b04b01bc9a11b7ff4766386d43c7830045d"
+          }
+        },
+        {
+          "client_id": "839267350427-uiopqs537fbr1s7v695gc5dbrce5et4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXq1JxtQGHRXCqHxFLq0GRvXRKptnLt6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839267350427-uiopqs537fbr1s7v695gc5dbrce5et4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
