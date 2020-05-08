@@ -7,7 +7,7 @@
     tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/AppName"
+        android:id="@+id/signUpLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/emailLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.363" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/passwordLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toStartOf="@+id/passwordTextField"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/emailLabel"
         app:layout_constraintVertical_bias="0.126" />
 
     <EditText
@@ -55,7 +55,7 @@
         android:ems="10"
         android:hint="Your password"
         android:inputType="textPassword"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/passwordLabel"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
@@ -66,7 +66,7 @@
         android:ems="10"
         android:hint="Your email"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/emailLabel"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
@@ -82,4 +82,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordTextField"
         app:layout_constraintVertical_bias="0.392" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

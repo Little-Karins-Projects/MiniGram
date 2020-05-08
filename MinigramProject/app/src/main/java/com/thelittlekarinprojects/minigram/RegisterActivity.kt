@@ -23,7 +23,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        // Gets the textboxes
+        // Gets the Required UI elements
         var userText = findViewById<EditText>(R.id.emailTextField)
         var passwordText = findViewById<EditText>(R.id.passwordTextField)
         var signupButton = findViewById<Button>(R.id.signUpButton)

@@ -19,32 +19,44 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/userLogged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailTextFieldLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginText"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <TextView
+        android:id="@+id/emailLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:text="Email"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/emailTextField"
+        app:layout_constraintEnd_toStartOf="@+id/emailTextFieldLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.363" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/passwordLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:text="Password"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/passwordTextField"
+        app:layout_constraintEnd_toStartOf="@+id/passwordTextFieldLogin"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/emailLabel"
         app:layout_constraintVertical_bias="0.126" />
 
     <EditText
@@ -55,7 +67,7 @@
         android:ems="10"
         android:hint="Your password"
         android:inputType="textPassword"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/passwordLabel"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
@@ -66,7 +78,7 @@
         android:ems="10"
         android:hint="Your email"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/emailLabel"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
