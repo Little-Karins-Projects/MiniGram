@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
         if(fAuth.currentUser == null) {
             userLogged.text = "No user Logged";
         } else {
-            userLogged.text = "Welcome " + fAuth.currentUser?.email
+            // Go directly to profile page
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
         loginButton.setOnClickListener {
@@ -47,10 +49,11 @@ class MainActivity : AppCompatActivity() {
                             Snackbar.LENGTH_SHORT).show()
                         userLogged.text = fAuth.currentUser?.email
                         Log.i("User", fAuth.currentUser?.email)
+                        val intent = Intent(this, ProfileActivity::class.java)
+                        startActivity(intent)
 
                         /*Toast.makeText(this, "Signed In!.",
                             Toast.LENGTH_SHORT).show()*/
-                        val user  = fAuth.currentUser?.email;
                     } else {
                         // If sign in fails, display a message to the user
                         Log.w("Authentication", "logUserWithEmail:failure", task.exception)
@@ -64,6 +67,11 @@ class MainActivity : AppCompatActivity() {
 
         registerButton.setOnClickListener { val intent = Intent(this, RegisterActivity::class.java)
         startActivity(intent)}
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        fAuth.signOut()
     }
 
 }

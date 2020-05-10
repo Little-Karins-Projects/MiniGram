@@ -40,7 +40,6 @@ class RegisterActivity : AppCompatActivity() {
                     /*Toast.makeText(this, "Registration succeded!.",
                         Toast.LENGTH_SHORT).show()*/
                     Snackbar.make(this.findViewById(android.R.id.content), R.string.registration_success,Snackbar.LENGTH_SHORT).show()
-                    val user  = fAuth.currentUser
                     finish() // Ends this activity and returns to previous one
                 } else {
 
