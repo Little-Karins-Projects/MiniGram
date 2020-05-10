@@ -2,6 +2,7 @@ package com.thelittlekarinprojects.minigram
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.GridLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
@@ -25,6 +26,14 @@ class ProfileActivity : AppCompatActivity() {
         createDummyData()
         var userLogged = findViewById<TextView>(R.id.profile_user_mail)
         userLogged.text = fAuth.currentUser?.email
+
+        var signOutButton = findViewById<Button>(R.id.profile_sign_out)
+
+        signOutButton.setOnClickListener() {
+            fAuth.signOut()
+            finish()
+        }
+
         profile_recycler_view.layoutManager = GridLayoutManager(this, 3)
         profile_recycler_view.adapter = ImageAdapter(imageList)
 

@@ -1,5 +1,6 @@
 package com.thelittlekarinprojects.minigram
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,11 +9,15 @@ import kotlinx.android.synthetic.main.image_list_item.view.*
 
 class ImageAdapter(val imageList : ArrayList<Image>) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
 
-    class ImageViewHolder(itemview: View) : RecyclerView.ViewHolder(itemview) {
+    class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         // Binds the data
         fun bindImage(image : Image){
             // TODO add listener to show more details of the photo
+            itemView.setOnClickListener() {
+                val intent = Intent(itemView.context, ImageDetailsActivity::class.java)
+                itemView.context.startActivity(intent)
+            }
             itemView.image_list_item_0.setImageResource(image.image0)
             //itemView.image_list_item_1.setImageResource(image.image0)
             //itemView.image_list_item_2.setImageResource(image.image0)

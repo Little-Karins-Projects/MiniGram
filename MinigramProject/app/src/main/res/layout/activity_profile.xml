@@ -51,13 +51,13 @@
             android:layout_margin="8dp"
             android:text="userMail" />
 
-        <TextView
-            android:id="@+id/profile_friend_count"
+        <Button
+            android:id="@+id/profile_sign_out"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="8dp"
-            android:text="friendCount" />
+            android:text="Sign Out" />
 
     </LinearLayout>
 
