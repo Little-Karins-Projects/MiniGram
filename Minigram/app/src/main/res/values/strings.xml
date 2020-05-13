@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Minigram</string>
+
+
+    // Main layout
+    <string name="email_user_">Insert E-mail here</string>
+    <string name="password_user_">Insert Password here</string>
+    <string name="Login_user_">Login</string>
+    <string name="Signup_user_">Sign Up</string>
+    <string name="loglittleloot">loglittleloot</string>
+    <string name="accept_nick">ACCEPT</string>
+    <string name="user_nick_">Insert Nick here</string>
+
+    // Profile Layout
+    <string name="profile_email">E-mail user here</string>
+    <string name="sign_out_">SIGN OUT</string>
+
+    //Snapbar
+    <string name="registration_success"> Registration Completed!</string>
+    <string name="registration_failure"> Registration Failed!</string>
+    <string name="authentication_success"> Authentication Successful!</string>
+    <string name="authentication_failed"> Wrong credentials!</string>
+    <string name="cabecero">CABECERO</string>
+    <string name="cabecero2">CABECERO2</string>
+</resources>
