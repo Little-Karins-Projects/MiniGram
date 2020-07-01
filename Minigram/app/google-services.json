@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "357823860850",
+    "firebase_url": "https://esqueleto-mim.firebaseio.com",
+    "project_id": "esqueleto-mim",
+    "storage_bucket": "esqueleto-mim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357823860850:android:33fd9c1a337403461db2eb",
+        "android_client_info": {
+          "package_name": "com.littleloot.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357823860850-5hjmknobcro6abtvsk9h43ggbms6bh47.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.littleloot.app",
+            "certificate_hash": "3fb63ce7bfbc49d584e52c9982a578fc2abaacbd"
+          }
+        },
+        {
+          "client_id": "357823860850-q36lnegi4lgjbgr6487mc5d2hmp2seqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCSg7jTpDmDD4A7cY6hDJhUKqhodXs97Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357823860850-q36lnegi4lgjbgr6487mc5d2hmp2seqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
